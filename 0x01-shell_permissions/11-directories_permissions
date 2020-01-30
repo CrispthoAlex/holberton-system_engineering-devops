@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo chmod -R +111X .
+sudo chmod -R +111 $(find . -type d)
