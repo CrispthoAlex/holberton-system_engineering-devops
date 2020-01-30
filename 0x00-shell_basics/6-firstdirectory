@@ -1,0 +1,2 @@
+#!/bin/bash
+mkdir /tmp/holberton #Create a script that creates a directory
