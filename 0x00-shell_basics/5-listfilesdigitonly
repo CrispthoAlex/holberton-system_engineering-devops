@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -n #Display current directory contents
+ls -na #Display current directory contents
