@@ -1,0 +1,2 @@
+#!/bin/bash
+find . -iname '*.gif' -type f -exec ls -aRS1 {} \; | cut -d '.' -f 2 | cut -d '/' -f 3
