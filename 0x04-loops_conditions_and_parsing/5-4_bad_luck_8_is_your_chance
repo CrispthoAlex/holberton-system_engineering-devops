@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# bad luck for the 4th loop iteration, good luck for the 8th loop iteration
+# Holberton School for the other iterations
+counter=1
+ms4="bad luck"
+ms8="good luck"
+while [ $counter -le 10 ]
+do
+    if [ "$counter" -eq 4 ]
+    then
+        echo "$ms4"
+    elif [ "$counter" -eq 8 ]
+    then
+        echo "$ms8"
+    else
+	echo "Holberton School"
+    fi
+    counter=$(( counter + 1 ))
+done
