@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Bash script Until, that displays Holberton School 10 times
+counter=0
+until (( counter==10 ))
+do
+    echo "Holberton School - $counter"
+    counter=$(( counter + 1 ))
+done
