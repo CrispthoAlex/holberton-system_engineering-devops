@@ -3,6 +3,6 @@
 counter=0
 until (( counter==10 ))
 do
-    echo "Holberton School - $counter"
+    echo "Holberton School"
     counter=$(( counter + 1 ))
 done
