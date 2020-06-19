@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Bash script that displays Holberton School 10 times
+
+for ((counter=1; counter<=10; counter++))
+do
+    echo "Holberton School"
+done
