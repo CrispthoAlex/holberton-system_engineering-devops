@@ -1,5 +1,5 @@
 # 0x04. Loops, conditions and parsing
-![](https://www.youtube.com/watch?v=BC2neyc5GcI&feature=youtu.be)
+![](https://www.scnsoft.com/blog-pictures/itsm/image-thumb__15143__blog_related_thumb/how-can-a-system-administrator-turn-into-a-devops-engineer@2x.png)
 ## Background Context
 
 ## Resources
@@ -27,7 +27,7 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 
 * How to create SSH keys
 * What is the advantage of using ``#!/usr/bin/env bash`` over ``#!/bin/bash``
-* How to use ``while, ``until`` and ``for`` loops
+* How to use ``while``, ``until`` and ``for`` loops
 * How to use ``if``, ``else``, ``elif`` and ``case`` condition statements
 * How to use the ``cut`` command
 * What are files and other comparison operators, and how to use them
