@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 # Bash script that kills the process 7-highlander
-# change the signal using the --signal SIGTERM (command-line option)
+# By default, it's the SIGTERM signal that gets sent, but if you want,
+# we change the signal using the --signal command-line option
+# --signal SIGTERM
 pkill --signal 9 -f 7-highlander
