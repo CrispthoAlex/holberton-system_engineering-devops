@@ -1,5 +1,6 @@
 # 0x05. Processes and signals
-![](https://www.linuxsecrets.com/images/easyblog_articles/1689/pid-ppid-tgid-explained-on-linuxsecrets.com.png)
+![](https://static.thegeekstuff.com/wp-content/uploads/2011/04/pid-300x225.jpg)
+
 ## Resources
 Read or watch:
 
