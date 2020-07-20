@@ -13,12 +13,12 @@
 
 In this project we will explore Networking, design a Web structure:
 
-## 0. Simple web stack
+## [0. Simple web stack](https://i.imgur.com/EEbLtIv.png)
 #### Design a one server web infrastructure that hosts the website that is reachable via ``www.foobar.com``
 
-## 1. Distributed web infrastructure
+## [1. Distributed web infrastructure](https://i.imgur.com/naBoKAb.png)
 #### Design a three server web infrastructure that hosts the website ``www.foobar.com``
 
-## 2. Secured and monitored web infrastructure
+## [2. Secured and monitored web infrastructure](https://imgur.com/D20j4Xl.png)
 
 #### Design a three server web infrastructure that hosts the website www.foobar.com, secured, serve encrypted traffic, and monitored.
