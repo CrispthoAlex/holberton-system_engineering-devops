@@ -19,6 +19,6 @@ In this project we will explore Networking, design a Web structure:
 ## [1. Distributed web infrastructure](https://i.imgur.com/naBoKAb.png)
 #### Design a three server web infrastructure that hosts the website ``www.foobar.com``
 
-## [2. Secured and monitored web infrastructure](https://imgur.com/D20j4Xl.png)
+## [2. Secured and monitored web infrastructure](https://imgur.com/VAMxs5Y)
 
 #### Design a three server web infrastructure that hosts the website www.foobar.com, secured, serve encrypted traffic, and monitored.
