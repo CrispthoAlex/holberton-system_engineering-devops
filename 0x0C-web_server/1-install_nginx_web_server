@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Bash script that configures a new Ubuntu machine
+sudo apt-get update
+sudo apt-get -y install nginx
+sudo ufw allow 'Nginx HTTP'
+sudo service nginx start
+sudo chmod 777 /var/www/html/index.nginx-debian.html
+echo "Holberton School" > /var/www/html/index.nginx-debian.html
