@@ -5,8 +5,7 @@
 # install Nginx
 sudo apt-get update
 sudo apt-get -y install nginx
-sudo service nginx start
-# Able port 80
+# Enable port 80
 sudo ufw allow 'Nginx HTTP'
 # Add line in server block
 sudo sed -i "/listen 80 default_server/a rewrite ^/redirect_me https://youtu.be/l9_-2oG4Cc0 permanent;" /etc/nginx/sites-available/default
@@ -16,6 +15,6 @@ sudo echo "Ceci n'est pas une page" | sudo tee /var/www/html/custom_404.html
 ERROR_STRING="error_page 404 /custom_404.html;"
 sudo sed -i "/listen 80 default_server/a $ERROR_STRING" /etc/nginx/sites-available/default
 # Add custom HTTP header
-sudo sed -i "/listen 80 default_server/a add_header X-Served-By $HOSTNAME" /etc/nginx/sites-available/default
+sudo sed -i "/listen 80 default_server/a add_header X-Served-By \"$HOSTNAME\";" /etc/nginx/sites-available/default
 # Restart nginx to load changes
 sudo service nginx restart
