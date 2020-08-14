@@ -2,8 +2,10 @@
 # Configure Nginx so that its HTTP response contains a custom header (on web-01 and web-02)
 #   The name of the custom HTTP header must be X-Served-By
 #   The value of the custom HTTP header must be the hostname of the server Nginx is running on
+# install Nginx
 sudo apt-get update
 sudo apt-get -y install nginx
+sudo service nginx start
 # Able port 80
 sudo ufw allow 'Nginx HTTP'
 # Add line in server block
