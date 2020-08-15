@@ -1,8 +1,13 @@
 # Install and configure an Nginx server and Add a custom HTTP header
+# Update
+exec { 'update':
+command => 'sudo apt-get update',
+}
 
 # install nginx
 package { 'nginx':
 ensure  => installed,
+require => Exec['update'],
 }
 
 # Add custom HTTP header
