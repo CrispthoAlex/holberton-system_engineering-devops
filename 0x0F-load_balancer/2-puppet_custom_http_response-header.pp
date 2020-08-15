@@ -2,6 +2,7 @@
 # Update
 exec { 'update':
 command => 'sudo apt-get update',
+provider => shell,
 }
 
 # install nginx
