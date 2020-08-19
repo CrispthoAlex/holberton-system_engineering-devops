@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+# Script to Configure your domain zone so that the subdomain www points
+# to your load-balancer IP (lb-01)
+
+function dis_subdomain ()
+{
+    sub_list=(www lb-01 web-01 web-02)  # subdomains list
+
+    if [[ $# == 1 ]]
+    then
+	for su in "${sub_list[@]}"
+	do
+	    # Take subdomain ip address
+	    ipsub=$(dig $su."$1" | grep -A1 'ANSWER SECTION:' | tail -1 | awk '{print $5}')
+
+	    # Take subdomain record
+	    recsub=$(dig $su."$1" | grep -A1 'ANSWER SECTION:' | tail -1 | awk '{print $4}')
+
+	    # To print
+	    echo "The subdomain $su is a $recsub record and points to $ipsub"
+	done
+
+    elif [[ $# == 2 ]]
+    then
+
+	# Take subdomain ip address
+	ipsub=$(dig $2."$1" | grep -A1 'ANSWER SECTION:' | tail -1 | awk '{print $5}')
+	# Take subdomain record
+	recsub=$(dig $2."$1" | grep -A1 'ANSWER SECTION:' | tail -1 | awk '{print $4}')
+	# To print
+	echo "The subdomain $2 is a $recsub record and points to $ipsub"
+
+    fi
+
+    return 0
+
+}
+if [[ $# == 1 ]]
+then
+    dis_subdomain "$1"
+
+elif [[ $# == 2 ]]
+then
+    dis_subdomain "$1" "$2"
+fi
