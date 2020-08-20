@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # script that configures the container so that Nginx is running as the nginx user
-pkill apache2
-sudo sed -i "s/www-data/nginx/g" /etc/nginx/nginx.conf
-sed -i "s/80/8080/g" /etc/nginx/sites-available/default
-service nginx restart
+pkill apache2  # Stop apache2
+sudo sed -i "s/www-data/nginx/g" /etc/nginx/nginx.conf  # Change to nginx user
+sed -i "s/80/8080/g" /etc/nginx/sites-available/default  # Listen 8080 port
+sudo -u nginx service nginx restart  # Restart to Apply changes
