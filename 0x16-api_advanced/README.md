@@ -1,0 +1,23 @@
+# 0x16. API advanced
+
+![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/314/WIxXad8.png)
+
+## Background Context
+Questions involving APIs are common for interviews. Sometimes theyre as simple as write a Python script that queries a given endpoint, sometimes they require you to use recursive functions and format/sort the results.
+
+A great API to use for some practice is the Reddit API. Theres a lot of endpoints available, many that dont require any form of authentication, and theres tons of information to be parsed out and presented. Getting comfortable with API calls now can save you some face during technical interviews and even outside of the job market, you might find personal use cases to make your life a little bit easier.
+
+## Resources
+#### Read or watch:
+
+* [Reddit API Documentation](https://www.reddit.com/dev/api/)
+* [Query String](https://en.wikipedia.org/wiki/Query_string)
+
+## Learning Objectives
+
+#### General
+* How to read API documentation to find the endpoints youre looking for
+* How to use an API with pagination
+* How to parse JSON results from an API
+* How to make a recursive API call
+* How to sort a dictionary by value
