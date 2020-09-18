@@ -14,7 +14,7 @@ def recurse(subreddit, hot_list=[], after=""):
     Subreddit: A subreddit is a specific online community, and the posts
                associated with it, on the social media website
     """
-    url = "https://api.reddit.com/r/{}/hot?limit=100&after={}".format(subreddit, after)
+    url = "https://api.reddit.com/r/{}/hot?after={}".format(subreddit, after)
     u_Agent = 'Chrome/85.0.4183.102'
     hot_req = requests.get(url, headers={'User-Agent': u_Agent})
     json_hot = hot_req.json()
