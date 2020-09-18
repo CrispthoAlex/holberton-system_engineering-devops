@@ -18,8 +18,9 @@ def top_ten(subreddit):
     u_Agent = 'Chrome/85.0.4183.102'
     top10_req = requests.get(url, headers={'User-Agent': u_Agent})
     json_top10 = top10_req.json()
-    if not top10_req.status_code == 200:
-        return None
+    if top10_req.status_code != 200:
+        print(None)
+        return
     for title in enumerate(json_top10['data']['children']):
             print(title[1]['data']['title'])
 
