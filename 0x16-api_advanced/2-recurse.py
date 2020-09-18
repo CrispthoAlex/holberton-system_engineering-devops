@@ -14,9 +14,6 @@ def recurse(subreddit, hot_list=[], after=""):
     Subreddit: A subreddit is a specific online community, and the posts
                associated with it, on the social media website
     """
-    if after is None:
-        return []
-
     url = "https://api.reddit.com/r/{}/hot?limit=100&after={}".format(subreddit, after)
     u_Agent = 'Chrome/85.0.4183.102'
     hot_req = requests.get(url, headers={'User-Agent': u_Agent})
@@ -24,8 +21,9 @@ def recurse(subreddit, hot_list=[], after=""):
 
     if hot_req.status_code != 200:
         return None
-
     for title in enumerate(json_hot['data']['children']):
         hot_list.append(title[1]['data']['title'])
 
+    if json_hot['data']['after'] is None:
+        return []
     return hot_list + recurse(subreddit, hot_list, json_hot['data']['after'])
