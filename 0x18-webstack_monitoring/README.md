@@ -32,4 +32,4 @@ Web stack monitoring can be broken down into 2 categories:
 
 ## 0. Sign up for [Datadog](https://www.datadoghq.com/) and install datadog-agent
 ## 1. Monitor some metrics - [System check](https://docs.datadoghq.com/integrations/system/)
-## 2. Create a dashboard - [Datadog's API](https://docs.datadoghq.com/api/v1/dashboards/#get-all-dashboards)
+## 2. [Create a dashboard](./2-setup_datadog) - [Datadog's API](https://docs.datadoghq.com/api/v1/dashboards/#get-all-dashboards)
